@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% block title %}Home{% endblock %}
 {% block home_active %}class="active"{% endblock %}
+{% load static %}
 {% block meta_tags %}
   <meta property="og:title" content="Random Workout Generator">
   <meta property="og:image" content="{% static 'images/workout.png' %}">
   <meta property="og:description" content="Workout from over 200+ bodyweight exercises in the DareBee workout library, no equipment required!">
 {% endblock %}
-{% load static %}
 {% block content %}
 
 
