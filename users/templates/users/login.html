@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block meta_tags %}
+  <meta property="og:title" content="Random Workout Generator">
+  <meta property="og:image" content="{% static 'images/workout.png' %}">
+  <meta property="og:description" content="This website is a High-intensity interval training application that will give you a randomly selected exercise from the DareBee workout library. These exercises do not require any equipment.">
+{% endblock %}
 {% block title %}Login{% endblock %}
 {% block login_active %}class="active"{% endblock %}
 {% block content %}
