@@ -40,8 +40,6 @@ def tracker_profile(request):
                     obj.weight = form.cleaned_data['weight']
                 if form.cleaned_data['height']:
                     obj.height = form.cleaned_data['height']
-                obj.weight_tracker = form.cleaned_data['weight_tracker']
-                obj.bm_tracker = form.cleaned_data['bm_tracker']
                 if form.cleaned_data['countdown_number']:
                     obj.countdown_number = form.cleaned_data['countdown_number']
                 obj.save()
@@ -51,8 +49,6 @@ def tracker_profile(request):
                 user_profile.age = form.cleaned_data['age']
                 user_profile.weight = form.cleaned_data['weight']
                 user_profile.height = form.cleaned_data['height']
-                user_profile.weight_tracker = form.cleaned_data['weight_tracker']
-                user_profile.bm_tracker = form.cleaned_data['bm_tracker']
                 user_profile.countdown_number = form.cleaned_data['countdown_number']
                 user_profile.save()
 
